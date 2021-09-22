@@ -1,0 +1,6 @@
+<launch>
+	<include file="$(find mavros)/launch/px4.launch">
+		<arg name="fcu_url" value="/dev/ttyACM0:921600" />
+	</include>
+	<node name="sysid" pkg="sysid" type="super_node2" />
+</launch>
